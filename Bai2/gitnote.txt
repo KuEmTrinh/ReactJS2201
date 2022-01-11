@@ -4,4 +4,4 @@ B3 git remote
 B4 git push
 
 Git clone
-git pull
+git pull Test A
