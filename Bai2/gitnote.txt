@@ -4,4 +4,8 @@ B3 git remote
 B4 git push
 
 Git clone
+<<<<<<< HEAD
 git pull Test B
+=======
+git pull Test A
+>>>>>>> 1d78258035ac15a61c24bdc7ca7db45a65762432
