@@ -1,0 +1,41 @@
+table{
+    border-collapse: collapse;
+    border: 1px;
+    border-color: #000;
+}
+
+.flex {
+    display: flex;
+}
+.title {
+    color: green;
+    text-align: center;
+}
+.form-table {
+    background-color: green;
+}
+.form-table {
+    width: 600px;
+}
+.registed {
+    text-align: center;
+    color: red;
+}
+
+.form-table tr td:first-child {
+    width: 30%;
+}
+
+.center {
+    margin: auto;
+}
+
+.select__products {
+    width: 250px;
+}
+.select__products label {
+    width: 30px;
+}
+.select__products input {
+    width: 30px;
+}

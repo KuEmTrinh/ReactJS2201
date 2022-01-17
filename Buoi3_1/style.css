@@ -1,0 +1,52 @@
+body {
+    max-width: 760px;
+}
+.wrap {
+    margin: 0 auto;
+}
+.title {
+    color: red;
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+    padding: 2rem;
+}
+.flex {
+    display: flex;
+}
+.content {
+    width: 100%;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+.content__img {
+    width: 30%;
+}
+
+.li__title {
+    background-color: red;
+    color: white;
+}
+.list {
+    margin-left: 1rem;
+}
+.list ol {
+    padding: 1rem;
+}
+.list ul li {
+    margin-left: 2rem;
+}
+.list-square li{
+    list-style-type: square;
+}
+.txt-bold {
+    font-weight: bold;
+}
+.blue {
+    color: blue;
+}
+.center {
+    justify-content: center;
+}
