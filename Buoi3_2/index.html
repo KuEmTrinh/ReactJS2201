@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Đăng ký du lịch</title>
+</head>
+
+<body>
+    <h2 class="title">Đăng ký du lịch</h2>
+    <div class="form">
+        <form action="#" method="">
+            <table border="1" class="form-table">
+                <tr>
+                    <td>
+                        <label for="name">Họ và tên</label>
+                    </td>
+                    <td>
+                        <input type="text" name="name" id="name" placeholder="Nhập họ và tên">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="address">Địa chỉ</label>
+                    </td>
+                    <td>
+                        <input type="text" name="address" id="address" placeholder="Nhập địa chỉ">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="number">Phone number</label>
+                    </td>
+                    <td>
+                        <input type="number" name="number" id="number" placeholder="Nhập số điện thoại">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="vietnamese">Khách Việt Nam</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="vietnamese" id="vietnamese">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="tour">Chọn tour</label>
+                    </td>
+                    <td>
+                        <select name="tour" id="tour">
+                            <optgroup label="Miền Bắc">
+                                <option value="">Nha Trang - Đà Lạt</option>
+                                <option value="">Buôn Mê Thuột - Gia Lai - Kontum</option>
+                            </optgroup>
+                            <optgroup label="Miền Trung">
+                                <option value="">Đà Nẵng - Bà Nà Hills</option>
+                                <option value="">Huế - Đà Nẵng - Hội An</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Phương Tiện</p>
+                    </td>
+                    <td>
+                        <input type="radio" id="plane" name="transport" value="plane">
+                        <label for="plane">Máy bay</label>
+                        <input type="radio" id="car" name="transport" value="car">
+                        <label for="car">Ô tô</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <fieldset style="width: 400px;" class="center">
+                            <legend>Chọn sản phẩm tham gia</legend>
+                            <div class="center select__products">
+                                <label for="human">Người lớn</label>
+                                <input type="number" name="human" id="human">
+                                <label for="children">Trẻ em</label>
+                                <input type="number" name="children">
+                            </div>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="desc">Ghi chú thêm</label>
+                    </td>
+                    <td>
+                        <textarea name="desc" id="desc" name="desc" cols="50" rows="10"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="center">
+                        <div class="flex">
+                            <input type="submit" value="Đăng ký" name="btn" id="form-btn" class="btn center"
+                                onclick="register()">
+                        </div>
+                    </td>
+                </tr>
+                <tr id="text">
+
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+<script>
+    function register() {
+        const tr = document.getElementById("text")
+        const td = document.createElement("td")
+        td.setAttribute("colspan", "2")
+        tr.appendChild(td)
+        const p = document.createElement("p")
+        p.setAttribute("class", "registed")
+        p.textContent += "Bạn đã đăng ký thành công!!!"
+        td.appendChild(p)
+    }
+</script>
+
+</html>
