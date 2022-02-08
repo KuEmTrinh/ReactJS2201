@@ -1,0 +1,130 @@
+/* var */
+:root {
+    --primary-color: #2091f9;
+}
+
+header {
+    width: 100%;
+    height: 930px;
+    background-image: url("/images/Banner.png");
+    background-position: center;
+    background-size: cover;
+}
+body {
+    width: 100%;
+}
+.w-100 {
+    width: 100%;
+}
+.wrap {
+    width: 1024px;
+}
+.center {
+    margin: 0 auto;
+}
+.txt-center {
+    text-align: center;
+}
+.flex {
+    display: flex;
+}
+.jc-ct {
+    justify-content: center;
+}
+.jc-sb {
+    justify-content: space-between;
+}
+.nav {
+    align-items: center;
+    margin-top: 2rem;
+}
+.nav__ul a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+.nav__logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.nav__ul li,
+.nav-social__item {
+    padding: 1rem;
+}
+.nav-social__item img {
+    width: 33px;
+    height: auto;
+}
+.header__title {
+    margin-top: 12rem;
+    text-align: center;
+    color: #fff;
+    font-size: 74px;
+    line-height: 40px;
+    font-weight: bold;
+}
+.header__subtitle {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 3px;
+    font-weight: normal;
+}
+
+.btn {
+    color: #fff;
+    background-color: var(--primary-color);
+    border: none;
+    padding: 1rem 3rem;
+    border-radius: 35px;
+    font-weight: normal;
+}
+.header__button {
+    margin-top: 5rem;
+}
+.section {
+    margin-top: 3rem;
+}
+.section .title {
+    font-size: 48px;
+    color: #252b42;
+}
+.section .subtitle {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    color: #374754;
+    line-height: 18px;
+    margin-bottom: 4rem;
+}
+/* start there */
+.feature {
+    margin: auto;
+    width: 869px;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+.feature-item {
+    width: 235px;
+}
+.feature-item .image {
+    margin-bottom: 27px;
+}
+.feature-title {
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 0.1px;
+    margin-bottom: 20px;
+    color: #252b42;
+}
+.feature-text {
+    color: #374754;
+    font-size: 18px;
+    letter-spacing: 0.2px;
+}
+
+.section .screen img {
+    width: 100%;
+}
