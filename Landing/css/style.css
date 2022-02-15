@@ -89,6 +89,7 @@ body {
     padding: 1rem 3rem;
     border-radius: 35px;
     font-weight: normal;
+    cursor: pointer;
 }
 .header__button {
     margin-top: 5rem;
@@ -439,7 +440,7 @@ body {
 
 .contact-item {
     align-items: center;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.5rem;
 }
 
 .contact-item img {
