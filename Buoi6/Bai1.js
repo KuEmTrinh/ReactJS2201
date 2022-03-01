@@ -11,7 +11,7 @@ function checkPrime(number) {
     flag = false;
   } else {
     for (let i = 3; i < number - 1; i++) {
-      if (number % 2 === 0) {
+      if (number % i === 0) {
         flag = false;
       }
     }
@@ -25,4 +25,8 @@ function checkPrime(number) {
 }
 
 checkPrime(5);
+checkPrime(1);
+checkPrime(3);
+checkPrime(4);
 checkPrime(10);
+checkPrime(9);
