@@ -13,5 +13,6 @@ console.log(ageFilter);
 const isSchoolFilter = data.filter((el) => el.isSchool);
 console.log(isSchoolFilter);
 
+//
 const ageAverage = data.reduce((sum, el) => (sum += el.age), 0) / data.length;
 console.log(ageAverage);
