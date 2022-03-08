@@ -189,7 +189,7 @@ const runCase = (select) => {
       console.log("Exit");
       break;
     default:
-      console.log("Choose case from 1 to 10 pls");
+      console.log("Select case from 1 to 10 pls");
       repeat();
       break;
   }
