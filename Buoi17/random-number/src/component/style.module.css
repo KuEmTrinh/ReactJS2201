@@ -1,0 +1,85 @@
+.number {
+  align-items: center;
+  height: 300px;
+  display: flex;
+  background-color: rgb(235, 235, 235);
+}
+
+.successBackground {
+  background-color: #28a745;
+}
+.failBackground {
+  background-color: #dc3545;
+}
+
+.flex {
+  display: flex;
+}
+.flexColumn {
+  flex-direction: column;
+}
+.mt1 {
+  margin-top: 1rem;
+}
+
+.numberText {
+  margin: auto;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.inputBox {
+  display: flex;
+  align-items: center;
+  height: 150px;
+}
+
+.center {
+  margin: auto;
+}
+
+.inputValue {
+  padding: 10px 20px;
+  background-color: rgb(235, 235, 235);
+  border: none;
+  border-radius: 7px;
+}
+
+.guessButton {
+  padding: 1rem;
+  border-radius: 7px;
+  border: none;
+}
+
+.message {
+  position: fixed;
+  right: 10px;
+}
+
+.messageValue {
+  font-weight: bold;
+  padding: 6px 20px;
+  background-color: #fff;
+  border-radius: 7px;
+  font-size: large;
+}
+
+.valueList {
+  font-weight: bold;
+  text-align: center;
+}
+
+.listItem {
+  padding: 1rem;
+  margin: 5px;
+  background-color: rgb(82, 82, 82);
+  color: #fff;
+  border-radius: 5px;
+}
+
+.answerNumber {
+  padding: 2rem;
+  font-weight: bold;
+  font-size: 50px;
+}
