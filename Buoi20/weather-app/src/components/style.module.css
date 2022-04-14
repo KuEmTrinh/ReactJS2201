@@ -1,0 +1,32 @@
+.inputBox {
+  display: flex;
+}
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+.marginTop1 {
+  margin-top: 1rem;
+}
+.inputItem {
+  padding: 14px 22px;
+  border: none;
+  background-color: #272727;
+  color: #fff;
+  border-radius: 5px;
+}
+.center {
+  margin: 0 auto;
+}
+.button {
+  padding: 14px 22px;
+  border: none;
+  background-color: #272727;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.infomarion {
+    background-color: grey;
+}
