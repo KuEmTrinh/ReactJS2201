@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./style.module.css";
 import { useState, useEffect } from "react";
 import Number from "./Number";
 import Message from "./Message";
