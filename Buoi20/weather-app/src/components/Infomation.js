@@ -15,3 +15,7 @@ export default function Infomation(props) {
     </div>
   );
 }
+
+// Doi background
+// khi an thay doi dia danh thi phai loading moi hien thi ra
+// check phai dam bao co du lieu roi moi lam -> crash done

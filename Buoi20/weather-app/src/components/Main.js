@@ -3,12 +3,31 @@ import { useState, useEffect } from "react";
 import Infomation from "./Infomation";
 import axios from "axios";
 import styles from "./style.module.css";
+import Loading from "./Loading";
+import "antd/dist/antd.css";
+import { Spin } from "antd";
 export default function Main() {
+  useEffect(() => {
+    if (loadData == true) {
+      setWeatherData([]);
+      setShowLoadingIcon(true);
+      setTimeout(() => {
+        getData();
+        setShowLoadingIcon(false);
+      }, 1000);
+      setLoadData(false);
+    }
+  });
+  const [showLoadingIcon, setShowLoadingIcon] = useState(false);
+  const [loadData, setLoadData] = useState(false);
   const [inputValue, setInputValue] = useState("");
   const [weatherData, setWeatherData] = useState([]);
   const apiKey = "9928caea4da264cbfeb825af3b0fab57";
   const onChangeValue = (e) => {
     setInputValue(e.target.value);
+  };
+  const onLoading = () => {
+    setLoadData(true);
   };
   const getData = async () => {
     try {
@@ -23,8 +42,8 @@ export default function Main() {
   };
   return (
     <div>
-      {/* {weatherData.name} */}
-      <Infomation weatherData={weatherData} />
+      {showLoadingIcon == true ? <Loading /> : null}
+      {weatherData != "" ? <Infomation weatherData={weatherData} /> : null}
       <div className={styles.inputBox}>
         <div className={[styles.center, styles.flexColumn].join(" ")}>
           <input
@@ -33,7 +52,12 @@ export default function Main() {
             type="text"
             onChange={onChangeValue}
           />
-          <button className={[styles.marginTop1, styles.button].join(" ")} onClick={getData}>Lấy dữ liệu</button>
+          <button
+            className={[styles.marginTop1, styles.button].join(" ")}
+            onClick={onLoading}
+          >
+            Lấy dữ liệu
+          </button>
         </div>
       </div>
     </div>
