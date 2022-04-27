@@ -1,0 +1,35 @@
+.navLink{
+    display: flex;
+    list-style-type: none;
+    font-style: normal;
+}
+.navLink li{
+    font-weight: bold;
+    margin-right: 2rem;
+}
+.flex{
+    display: flex;
+}
+.jctsb{
+    justify-content: space-between;
+}
+.loginButton{
+    list-style-type: none;
+    padding: 1rem; 
+}
+.loginButton a:hover{
+    background-color: red;
+}
+
+.loginButton a:link, .loginButton a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+  
+.loginButton a:hover, .loginButton a:active {
+    background-color: red;
+}
